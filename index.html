@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+ 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+ 
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+ 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+ 
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.0/dist/tailwind.min.css" rel="stylesheet">
+ 
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+ </head>
+ 
+<body>
+
+  <header>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+      </label>
+      <div>
+        <img class="logo" src="./images/RBA-logo.png"/>
+      </div>
+      <ul>
+        <li><a href="#InstoreCompanion" id="link-instore">Instore Companion</a></li>
+        <li><a href="#management" id="link-management">Management</a></li>
+        <li><a href="#myAcademy" id="link-myacademy">My Academy</a></li>
+        <li><a href="#faqs" id="link-faqs">FAQs</a></li>
+        <li><a href="#contactUs" id="link-contactus">Contact Us</a></li>
+      </ul>
+      <div class="switch-block">
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>        
+      </div>
+    </nav>
+  </header>
+<!-- -----------------------Instore-companion------------------- -->
+<div id="InstoreCompanion" style="display: block;">
+  <div class=" cards-container">
+    <div class="heading">
+      <h4>In store Companion</h4>
+      <p>3 ways to support your customer</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="../fearLS/images/t2m1-6.jpg"/>
+        <div class="description">
+          <h4>Show & Tell Gallery</h4>
+          <p>Check out our library of product<br>demo and brand story videos<br>helps
+          your customer to choose<br>the perfect product for<br>their needs</p>
+          <div class="d-flex justify-content-center">
+            <button class="btn-1">View Course</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/t2m1-5.jpg"/>
+        <div class="description d-flex flex-column justify-content-between">
+          <h4>Analyse your skin</h4>
+          <p>Give your customers the<br>ultimate skin with expert<br>
+            analysis & advice from<br>POND’S SKIN INSTITUTE.</p>
+          <div class="d-flex justify-content-center">
+            <button class="btn-1">View Course</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/t2m1-7.jpg"/>
+        <div class="description d-flex flex-column justify-content-between">
+          <h4>Personalised Consultation</h4>
+          <p>Fill out your customer's details<br>on this form and tailor your beauty advice
+          and recommendations accordingly</p>
+          <div class="d-flex justify-content-center">
+            <button class="btn-1">View Course</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>Terms of Use   |   Privacy Policy   |   Cookie Setting</p><br>
+  </footer>
+</div>
+
+<!-- ---------------Management-section--------------- -->
+
+
+<div id="management" class="management-cont">
+  <div class="head-1">
+    <h4>Management</h4>
+    <h6>General</h6>
+    <hr style="border-width: 1px solid;">
+  </div>
+  <div class="big-card">
+    <br><br><br>
+    <hr class= "card-hr">
+    <div class="courses-cont">
+      <div>
+        <h5 class="courses-head">Courses</h5>
+      </div>
+      <div class="manage-ul">
+        <p><a href="#">Manage courses and categories</a></p>
+        <p><a href="#">Course custom fields</a></p>
+        <p><a href="#">Add a category</a></p>
+        <p><a href="#">Add a new course</a></p>
+        <p><a href="#">Restore course</a></p>
+      </div>
+    </div><br>
+    <hr class= "card-hr">
+    <div class="courses-cont2">
+      <div>
+        <h5>Site home</h5>
+      </div>
+      <div class="manage-ul">
+        <p><a href="#">Site home settings</a></p>
+      </div>
+    </div><br>
+    <hr class= "card-hr">
+    <div class="courses-cont2">
+      <div>
+        <h5>Reports</h5>
+      </div>
+    </div>
+  </div>
+  <footer class="footer2">
+    <p>Terms of Use   |   Privacy Policy   |   Cookie Setting</p><br>
+  </footer>
+
+</div>
+
+<!-- ----------------------------My-academy------------------------------- -->
+
+<div class="my-academy-cont" id="myAcademy" style="display: none;">
+
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <h4>My Academy</h4>
+    <h6>For internal use only</h6>
+  </div>
+
+  <div class="d-flex flex-row justify-content-start" style="margin:10px 80px; gap: 20px; flex-wrap: wrap;">
+    <form style="border: 0.5px solid black;width: 220px; height: 30px;">
+      <i class="fa fa-search"></i>
+      <input type="search" placeholder="Search course..." style="border:0px;">
+    </form>
+    <select name="dog-names" id="dog-names">    
+      <option value="rigatoni">All categories</option>
+      <option value="dave">How to Sell</option>
+      <option value="pumpernickel">Face Care</option>
+      <option value="reeses">Hair Care</option>
+    </select>
+    <select name="dog-names" id="dog-names">    
+      <option value="rigatoni">Sort</option>
+      <option value="dave">Sort</option>
+      <option value="pumpernickel">Sort A to Z</option>
+      <option value="reeses">Sort Z to A</option>
+    </select>
+    <select name="dog-names" id="dog-names">    
+      <option value="rigatoni">More</option>
+      <option value="dave">Add a new course</option>
+      <option value="pumpernickel">Add a subcategory</option>
+      <option value="reeses">Manage courses</option>
+    </select>
+  </div>
+
+  <div class="cards d-flex flex-wrap justify-content-evenly" style="">
+    <div class="card" style="border: 1px solid black;">
+      <img src="../fearLS/images/t2m1-6.jpg"/>
+      <div class="description">
+        <h4>Show & Tell Gallery</h4>
+        <p>Check out our library of product<br>demo and brand story videos<br>helps
+        your customer to choose<br>the perfect product for<br>their needs</p>
+        <div class="d-flex justify-content-center">
+          <button class="btn-1">View Course</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/t2m1-5.jpg"/>
+      <div class="description d-flex flex-column justify-content-between">
+        <h4>Analyse your skin</h4>
+        <p>Give your customers the<br>ultimate skin with expert<br>
+          analysis & advice from<br>POND’S SKIN INSTITUTE.</p>
+        <div class="d-flex justify-content-center">
+          <button class="btn-1">View Course</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/t2m1-7.jpg"/>
+      <div class="description d-flex flex-column justify-content-between">
+        <h4>Personalised Consultation</h4>
+        <p>Fill out your customer's details<br>on this form and tailor your beauty advice
+        and recommendations accordingly</p>
+        <div class="d-flex justify-content-center">
+          <button class="btn-1">View Course</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/t2m1-5.jpg"/>
+      <div class="description d-flex flex-column justify-content-between">
+        <h4>Analyse your skin</h4>
+        <p>Give your customers the<br>ultimate skin with expert<br>
+          analysis & advice from<br>POND’S SKIN INSTITUTE.</p>
+        <div class="d-flex justify-content-center">
+          <button class="btn-1">View Course</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/t2m1-5.jpg"/>
+      <div class="description d-flex flex-column justify-content-between">
+        <h4>Analyse your skin</h4>
+        <p>Give your customers the<br>ultimate skin with expert<br>
+          analysis & advice from<br>POND’S SKIN INSTITUTE.</p>
+        <div class="d-flex justify-content-center">
+          <button class="btn-1">View Course</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/t2m1-5.jpg"/>
+      <div class="description d-flex flex-column justify-content-between">
+        <h4>Analyse your skin</h4>
+        <p>Give your customers the<br>ultimate skin with expert<br>
+          analysis & advice from<br>POND’S SKIN INSTITUTE.</p>
+        <div class="d-flex justify-content-center">
+          <button class="btn-1">View Course</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/t2m1-5.jpg"/>
+      <div class="description d-flex flex-column justify-content-between">
+        <h4>Analyse your skin</h4>
+        <p>Give your customers the<br>ultimate skin with expert<br>
+          analysis & advice from<br>POND’S SKIN INSTITUTE.</p>
+        <div class="d-flex justify-content-center">
+          <button class="btn-1">View Course</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/t2m1-5.jpg"/>
+      <div class="description d-flex flex-column justify-content-between">
+        <h4>Analyse your skin</h4>
+        <p>Give your customers the<br>ultimate skin with expert<br>
+          analysis & advice from<br>POND’S SKIN INSTITUTE.</p>
+        <div class="d-flex justify-content-center">
+          <button class="btn-1">View Course</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./images/t2m1-5.jpg"/>
+      <div class="description d-flex flex-column justify-content-between">
+        <h4>Analyse your skin</h4>
+        <p>Give your customers the<br>ultimate skin with expert<br>
+          analysis & advice from<br>POND’S SKIN INSTITUTE.</p>
+        <div class="d-flex justify-content-center">
+          <button class="btn-1">View Course</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="footer2">
+    <p>Terms of Use   |   Privacy Policy   |   Cookie Setting</p><br>
+  </footer>
+
+</div>
+
+
+<!-- ---------------------------------contact-us------------------------- -->
+
+<div id ='contactUs' class="contact-cont">
+
+  <div class="bg-img" >
+    <h4>Contact Us</h4>
+  </div>
+  <div class="head-3">
+    <h5>We’re here to support you every step of the way. If you have any questions or need assistance, please don’t hesitate to reach out to our local Unilever team at rba.indonesia@unilever.com</h5>
+    <br><h5>To give Feedback, click here: Feedback Form</h5><br>
+    <h5 style="font-weight: 600;">Thank you for your dedication and hard work!</h5><br>
+  </div>
+  <footer class="footer2">
+    <p>Terms of Use   |   Privacy Policy   |   Cookie Setting</p><br>
+  </footer>
+</div>
+
+<!-- ---------------------------------------FAQs--------------------------------- -->
+<div id ="faqs" class="faqs-cont">
+
+  <div class="bg-img" >
+    <h4>Frequently Asked Questions (FAQ)</h4>
+  </div>
+  <div class="general-cont">
+    <h4>GENERAL QUESTIONS</h4><br>
+    <hr style="border-width: 1px solid;"><br>
+
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">1. What is Retail Beauty Academy?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Retail Beauty Academy by Unilever is designed to upskill Unilever Beauty Advisors and Customer Development teams with key knowledge including the science behind our products alongside latest Skin & Hair trends. It also equips Beauty Advisors and Supervisors with engaging tools to captivate consumers effectively in-store, ensuring every interaction is both relevant and impactful.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">2. How do I sign up for courses?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>You don’t need to sign up for the courses. Instead, you will be enrolled to the courses by your line manager/ supervisor.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">3. Can I access the courses on mobile devices?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Yes, Retail Beauty Academy is accessible on mobile devices. All you need to do is log in to your account using a web browser on your mobile device.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">4. Is my data secure on this app?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Yes, your data is secure. We store your data on our Unilever hosting solution.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">5. How do I log out of the app?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>To log out, you may click on your profile icon at the top right corner of the screen and select “Sign Out” from the dropdown menu.</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h4>LANGUAGE AND COUNTRY SUPPORT</h4>
+    <hr style="border-width: 1px solid;">
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">1. Can I access the platform from different countries?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>Absolutely! Retail Beauty Academy is accessible from any country. You will only have access to the courses based on the market you are assigned to. Ensure you have a stable internet connection for the best experience.</p>
+        </div>
+      </div> 
+    </div>
+    <br>
+    <h4>SUPPORT AND COMMUNICATION</h4>
+    <hr style="border-width: 1px solid;">
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">1. How can I reach out to the Unilever team for assistance?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>You may visit the “Contact Us” tab and send out an email to the point of contact suggested on the page.</p>
+        </div>
+      </div> 
+    </div>
+    <br>
+    <h4>PROGRESS TRACKING</h4>
+    <hr style="border-width: 1px solid;">
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">1. How can I track my progress in courses?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>You may visit "My Achievement" section to view your progress.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">2. Why do I see two courses on My Achievement section?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>You will see duplicate courses in My Achievements section because each course has been designed in 2 languages, Bahasa and English.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">3. What is the percentage up or down against Total Course Enrolments, Number of Courses Completed and Modules Completed in My Achievements section?</span><span class="icon" aria-hidden="true"></span></button>
+        <div class="accordion-content">
+          <p>This percentage growth or drop is a comparison of the current timeline’s data versus the previous timeline’s data. eg. Current 7 days modules completed is 8 and previous 7 days modules completed is 10, therefore the percentage drop is 20% down.</p>
+        </div>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <footer class="footer2">
+    <p>Terms of Use   |   Privacy Policy   |   Cookie Setting</p><br>
+  </footer>
+</div>
+  
+
+
+<!-- JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- Your Custom JavaScript -->
+<script src="main.js"></script>
+
+
+</body>
+</html>
